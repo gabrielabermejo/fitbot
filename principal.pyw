@@ -14,7 +14,7 @@ class Principal:
 
         self.ventanita.resizable(False, False)
 
-        self.miFrame=Frame(self.ventanita, width=500, height=700)
+        self.miFrame=Frame(self.ventanita, width=500, height=500)
         self.miFrame.pack()
         self.miFrame.config(bg='dark turquoise')
         self.miLabel=Label(self.miFrame, text="Digite sus datos", font=("Courier", 13))
@@ -39,17 +39,24 @@ class Principal:
         cuadroTexto2.place(x=190, y=115)
 
         def codigoBoton():
-            print(self.peso.get())
-            print(self.altura.get())
-            print(self.edad.get())
-            int(self.peso.get())
-            int(self.altura.get())
-            int(self.edad.get())
+
+            if len(self.peso.get())==0:
+                return
+            if len(self.altura.get())==0:
+                return
+            if len(self.edad.get())==0:
+                return
             p =  Personas(int(self.peso.get()), int(self.altura.get()), int(self.edad.get()))
+            
+            self.peso.set('')
+            self.altura.set('')
+            self.edad.set('')
+
             Info(p)
+            #self.ventanita.withdraw()
             
 
-        botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton)
+        botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='blue')
         botonEnvio.place(x=220, y=145)
 
         self.ventanita.mainloop()
