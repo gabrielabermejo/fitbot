@@ -14,20 +14,24 @@ class Principal:
 
         self.ventanita.resizable(False, False)
 
-        self.miFrame=Frame(self.ventanita, width=500, height=500)
+        self.miFrame=Frame(self.ventanita, width=500, height=400)
         self.miFrame.pack()
-        self.miFrame.config(bg='dark turquoise')
-        self.miLabel=Label(self.miFrame, text="Digite sus datos", font=("Courier", 13))
+        self.miFrame.config(bg='pink')
+        self.miLabel=Label(self.miFrame, text="Digite sus datos", font=("The Monotype Corporation", 13))
         self.miLabel.place(x=150, y=20)
-        self.miLabel.config(bg='dark turquoise')
+        self.miLabel.config(bg='pink')
 
         pesoLabel=Label(self.miFrame, text="Peso:", padx=-12)
         pesoLabel.place(x=150, y=55)
+        kgLabel=Label(self.miFrame, text="(Kg)")
+        kgLabel.config(bg='pink')
+        kgLabel.place(x=320, y=55)
         cuadroTexto=Entry(self.ventanita, textvariable=self.peso)
         cuadroTexto.place(x=190, y=55)
 
         alturaLabel=Label(self.miFrame, text="Altura:", padx=-12)
         cmLabel=Label(self.miFrame, text="(cm)")
+        cmLabel.config(bg='pink')
         cmLabel.place(x=320, y=85)
         alturaLabel.place(x=150, y=85)
         cuadroTexto1=Entry(self.ventanita, textvariable=self.altura)
@@ -56,7 +60,7 @@ class Principal:
             #self.ventanita.withdraw()
             
 
-        botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='blue')
+        botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='light pink')
         botonEnvio.place(x=220, y=145)
 
         self.ventanita.mainloop()
