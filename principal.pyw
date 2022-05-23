@@ -47,6 +47,7 @@ class Principal:
             int(self.edad.get())
             p =  Personas(int(self.peso.get()), int(self.altura.get()), int(self.edad.get()))
             Info(p)
+            
 
         botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton)
         botonEnvio.place(x=220, y=145)
