@@ -45,7 +45,8 @@ class Info:
             recomendacion.set('')
         else:
             Mensaje.set('obeso')
-            recomendacion.set('')
+            recomendacion.set("Visite por favor un nutricionista \n e intente mejorar su actividad física diaria")
+    
         print(Mensaje.get())
         print(str(IMC))
 

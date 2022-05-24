@@ -2,7 +2,12 @@ from tkinter import *
 from tkinter.font import BOLD, ITALIC
 from entidades.persona import Personas
 from froms.informacion import Info
+
 class Principal:
+    def destruir(self):
+        self.ventanita.destroy()
+        Info()
+
     def __init__(self):
         self.ventanita = Tk()
         self.ventanita.title("FitBot")
@@ -18,8 +23,8 @@ class Principal:
         self.miFrame=Frame(self.ventanita, width=500, height=400)
         self.miFrame.pack()
         self.miFrame.config(bg='pink')
-        self.miLabel=Label(self.miFrame, text="Digite sus datos", font=("Arial", 15, BOLD, ITALIC))
-        self.miLabel.place(x=165, y=20)
+        self.miLabel=Label(self.miFrame, text="Digite sus datos", font=("Arial", 21, BOLD, ITALIC))
+        self.miLabel.place(x=155, y=15)
         self.miLabel.config(bg='pink')
 
         self.miFrame3=Frame(self.miFrame, width=500, height=400)
@@ -65,7 +70,7 @@ class Principal:
             self.edad.set('')
 
             Info(p)
-            #self.ventanita.withdraw()
+            self.ventanita.destroy()
             
 
         botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='light pink')
