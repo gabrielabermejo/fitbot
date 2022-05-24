@@ -37,6 +37,13 @@ class Info:
         if IMC<=18.5 and IMC>=0:
             Mensaje.set('bajo de peso')
             recomendacion.set('')
+        elif IMC<0 and persona.peso<0:
+            Mensaje.set('Debe digitar un valor valido')
+            recomendacion.set('Bruto')
+            #estadoLabel2=Label(self.miFrame2, text="Estado: "+Mensaje.get(), padx=-12)
+            #estadoLabel2.place(x=150, y=225)
+            #recomendacionesLabel2=Label(self.miFrame2, text="Por favor: "+recomendacion.get(), padx=-12)
+            #recomendacionesLabel2.place(x=150, y=250)
         elif IMC>=18.5 and IMC<=24.9:
             Mensaje.set('normal')
             recomendacion.set('')
@@ -55,6 +62,7 @@ class Info:
 
         estadoLabel2=Label(self.miFrame2, text="Estado: "+Mensaje.get(), padx=-12)
         estadoLabel2.place(x=150, y=225)
+
 
         recomendacionesLabel2=Label(self.miFrame2, text="Recomendaciones: "+recomendacion.get(), padx=-12)
         recomendacionesLabel2.place(x=150, y=250)

@@ -69,9 +69,9 @@ class Principal:
             self.altura.set('')
             self.edad.set('')
 
-            Info(p)
+
             self.ventanita.destroy()
-            
+            Info(p)
 
         botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='light pink')
         botonEnvio.place(x=220, y=145)
