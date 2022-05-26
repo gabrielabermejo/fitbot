@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter.font import BOLD, ITALIC
 from entidades.persona import Personas
 from froms.informacion import Info
+from froms.instruccion import Instru
 
 class Principal:
     def destruir(self):
@@ -24,36 +25,36 @@ class Principal:
         self.miFrame.pack()
         self.miFrame.config(bg='pink')
         self.miLabel=Label(self.miFrame, text="Digite sus datos", font=("Arial", 21, BOLD, ITALIC))
-        self.miLabel.place(x=155, y=15)
+        self.miLabel.place(x=150, y=25)
         self.miLabel.config(bg='pink')
 
         self.miFrame3=Frame(self.miFrame, width=500, height=400)
-        self.miFrame3.place(x=0,y=55)
+        self.miFrame3.place(x=0,y=70)
         self.miFrame3.config(bg='pink2')
 
         pesoLabel=Label(self.miFrame, text="Peso:", padx=-12)
-        pesoLabel.place(x=150, y=60)
+        pesoLabel.place(x=150, y=90)
         pesoLabel.config(bg='pink2')
         kgLabel=Label(self.miFrame, text="(Kg)")
         kgLabel.config(bg='pink2')
-        kgLabel.place(x=320, y=60)
+        kgLabel.place(x=320, y=90)
         cuadroTexto=Entry(self.ventanita, textvariable=self.peso)
-        cuadroTexto.place(x=190, y=60)
+        cuadroTexto.place(x=190, y=90)
 
         alturaLabel=Label(self.miFrame, text="Altura:", padx=-12)
         alturaLabel.config(bg='pink2')
         cmLabel=Label(self.miFrame, text="(cm)")
         cmLabel.config(bg='pink2')
-        cmLabel.place(x=320, y=90)
-        alturaLabel.place(x=150, y=90)
+        cmLabel.place(x=320, y=120)
+        alturaLabel.place(x=150, y=120)
         cuadroTexto1=Entry(self.ventanita, textvariable=self.altura)
-        cuadroTexto1.place(x=190, y=90)
+        cuadroTexto1.place(x=190, y=120)
 
         edadLabel=Label(self.miFrame, text="Edad:", padx=-12)
         edadLabel.config(bg='pink2')
-        edadLabel.place(x=150, y=120)
+        edadLabel.place(x=150, y=150)
         cuadroTexto2=Entry(self.ventanita, textvariable=self.edad)
-        cuadroTexto2.place(x=190, y=120)
+        cuadroTexto2.place(x=190, y=150)
 
         def codigoBoton():
 
@@ -73,8 +74,15 @@ class Principal:
             self.ventanita.destroy()
             Info(p)
 
+        def codigoBoton1():
+
+            Instru()
+
         botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='light pink')
-        botonEnvio.place(x=220, y=145)
+        botonEnvio.place(x=220, y=210)
+
+        botonInstru=Button(self.ventanita, text="?", command=codigoBoton1, bg='light pink')
+        botonInstru.place(x=15, y=350)
 
         self.ventanita.mainloop()
 

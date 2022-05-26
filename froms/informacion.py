@@ -20,11 +20,11 @@ class Info:
         pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso), padx=-12)
         pesoLabel2.place(x=150, y=55)
         
-        pesoLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12)
-        pesoLabel2.place(x=150, y=85)
+        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12)
+        alturaLabel2.place(x=150, y=85)
 
-        pesoLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12)
-        pesoLabel2.place(x=150, y=115)
+        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12)
+        edadLabel2.place(x=150, y=115)
 
         self.miLabel3=Label(self.miFrame2, text="Su IMC: ", font=("The Monotype Corporation", 13))
         self.miLabel3.place(x=150, y=150)
@@ -36,20 +36,20 @@ class Info:
         recomendacion= StringVar()
         if IMC<=18.5 and IMC>=0:
             Mensaje.set('bajo de peso')
-            recomendacion.set('')
+            recomendacion.set('Visite por favor un nutricionista \n e intente mejorar su actividad física diaria \n si desea, tambien puede agregar \n nuevas dietas a su diario vivir')
         elif IMC<0 and persona.peso<0:
             Mensaje.set('Debe digitar un valor valido')
-            recomendacion.set('Bruto')
+            recomendacion.set('Por favor, ingrese de nuevo')
             #estadoLabel2=Label(self.miFrame2, text="Estado: "+Mensaje.get(), padx=-12)
             #estadoLabel2.place(x=150, y=225)
             #recomendacionesLabel2=Label(self.miFrame2, text="Por favor: "+recomendacion.get(), padx=-12)
             #recomendacionesLabel2.place(x=150, y=250)
         elif IMC>=18.5 and IMC<=24.9:
             Mensaje.set('normal')
-            recomendacion.set('')
+            recomendacion.set('FELICITACIONES, \n su estado esta acorde a usted')
         elif IMC>=25 and IMC<=29.9:
             Mensaje.set('sobre peso')
-            recomendacion.set('')
+            recomendacion.set('Intente por favor mejorar su actividad diaria')
         else:
             Mensaje.set('obeso')
             recomendacion.set("Visite por favor un nutricionista \n e intente mejorar su actividad física diaria")
