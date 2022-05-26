@@ -1,5 +1,6 @@
 from entidades.persona import Personas
 from tkinter import *
+from froms.recetas import Recetas
 
 class Info:
     def __init__(self,persona):
@@ -49,7 +50,7 @@ class Info:
             recomendacion.set('FELICITACIONES, \n su estado esta acorde a usted')
         elif IMC>=25 and IMC<=29.9:
             Mensaje.set('sobre peso')
-            recomendacion.set('Intente por favor mejorar su actividad diaria')
+            recomendacion.set('Intente por favor mejorar su actividad diaria \n deja de comer tanto oyeme')
         else:
             Mensaje.set('obeso')
             recomendacion.set("Visite por favor un nutricionista \n e intente mejorar su actividad física diaria")
@@ -66,5 +67,15 @@ class Info:
 
         recomendacionesLabel2=Label(self.miFrame2, text="Recomendaciones: "+recomendacion.get(), padx=-12)
         recomendacionesLabel2.place(x=150, y=250)
+
+
+        def codigoBoton2():
+    
+            Recetas()
+
+        botonInstru=Button(self.ventanita2, text="RECETAS", command=codigoBoton2, bg='light pink')
+        botonInstru.place(x=15, y=350)
+
+
 
         self.ventanita2.mainloop()
