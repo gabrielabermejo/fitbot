@@ -86,6 +86,4 @@ class Principal:
 
         self.ventanita.mainloop()
 
-   
-
 Principal()
