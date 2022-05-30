@@ -43,6 +43,7 @@ class Recetas:
         botonInstru=Button(self.ventanita4, text="Bajo de peso", command=codigoBoton4, bg='pink')
         botonInstru.place(x=45, y=55)
         botonInstru.config(bg='plum')
+        
 
         
        
