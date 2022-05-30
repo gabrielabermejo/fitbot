@@ -30,10 +30,10 @@ class Info:
         pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso), padx=-12, bg='pink')
         pesoLabel2.place(x=150, y=85)
         
-        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12)
+        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12, bg='pink')
         alturaLabel2.place(x=150, y=115)
 
-        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12)
+        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12, bg='pink')
         edadLabel2.place(x=150, y=145)
 
 
