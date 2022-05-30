@@ -19,3 +19,4 @@ class Recetadelgado:
         self.miLabel5.config(bg='pink')
 
         
+        
