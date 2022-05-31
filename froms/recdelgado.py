@@ -58,6 +58,14 @@ class Recetadelgado:
         self.miLabel5.place(x=55, y=150)
         self.miLabel5.config(bg='white')
 
+        self.miLabel5=Label(self.miFrame5, text="2. Batido de platano, mango y yogurt")
+        self.miLabel5.place(x=55, y=250)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="Ingredientes: ")
+        self.miLabel5.place(x=55, y=270)
+        self.miLabel5.config(bg='white')
+
         def codigoBoton4():
             self.ventanita9.destroy()
             pass
