@@ -10,7 +10,7 @@ class Recetadelgado:
 
         self.ventanita6.resizable(False, False)
 
-        self.miFrame5=Frame(self.ventanita6, width=400, height=300)
+        self.miFrame5=Frame(self.ventanita6, width=400, height=700)
         self.miFrame5.pack()
         self.miFrame5.config(bg='pink')
 
@@ -18,5 +18,4 @@ class Recetadelgado:
         self.miLabel5.place(x=55, y=20)
         self.miLabel5.config(bg='pink')
 
-        
         

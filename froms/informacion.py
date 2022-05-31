@@ -93,7 +93,7 @@ class Info:
             Recetas()
 
         botonInstru=Button(self.ventanita2, text="RECETAS", command=codigoBoton2, bg='paleturquoise', fg='black')
-        botonInstru.place(x=15, y=380)
+        botonInstru.place(x=55, y=380)
 
         g=persona.altura-100
 
