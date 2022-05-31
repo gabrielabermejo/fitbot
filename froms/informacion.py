@@ -1,6 +1,7 @@
 from entidades.persona import Personas
 from tkinter import *
 from froms.recetas import Recetas
+from froms.ejercicios import Ejercicios
 from tkinter.font import BOLD, ITALIC
 #from colorama import Fore, init
 #init()
@@ -104,6 +105,13 @@ class Info:
             
         gLabel2=Label(self.miFrame2, text="Acerca de su peso ideal: "+Mensaje.get(),  font=("Arial", 11, BOLD, ITALIC), fg='black', bg='white')
         gLabel2.place(x=45, y=350)
+
+        def codigoBoton3():
+        
+            Ejercicios()
+
+        botonInstru=Button(self.ventanita2, text="RUTINAS", command=codigoBoton3, bg='paleturquoise', fg='black')
+        botonInstru.place(x=55, y=420)
 
 
         self.ventanita2.mainloop()
