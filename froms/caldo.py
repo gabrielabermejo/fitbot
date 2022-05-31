@@ -25,3 +25,23 @@ class Caldo:
         self.miFrame3=Frame(self.miFrame5, width=500, height=10)
         self.miFrame3.place(x=0,y=35)
         self.miFrame3.config(bg='paleturquoise')
+
+        self.miLabel5=Label(self.miFrame5, text="1. Limpia y corta las verduras en trozos medianos, cubos, trozos irregulares, \n tiras, como quieras, no hay regla aquí.", font=("Arial", 9))
+        self.miLabel5.place(x=6, y=50)
+        self.miLabel5.config(bg='white')
+
+        self.miFrame3=Frame(self.miFrame5, width=500, height=2)
+        self.miFrame3.place(x=0,y=90)
+        self.miFrame3.config(bg='paleturquoise')
+
+        self.miLabel5=Label(self.miFrame5, text="2.Coloca todos los ingredientes en una olla con 3 litros de agua y pon la temperatura al \n máximo. Cuando comience a hervir pon el fuego a la mitad y cocina hasta que el líquido \n  reduzca a la mitad. Calcula aproximadamente 45 minutos, dependiendo de tu cocina.", font=("Arial", 9))
+        self.miLabel5.place(x=6, y=95)
+        self.miLabel5.config(bg='white')
+
+        self.miFrame3=Frame(self.miFrame5, width=500, height=2)
+        self.miFrame3.place(x=0,y=145)
+        self.miFrame3.config(bg='paleturquoise')
+
+        self.miLabel5=Label(self.miFrame5, text="3.Transcurrido este tiempo cuela bien el caldo, déjalo enfriar y guárdalo en recipientes \n plásticos con tapa..", font=("Arial", 9))
+        self.miLabel5.place(x=6, y=150)
+        self.miLabel5.config(bg='white')
