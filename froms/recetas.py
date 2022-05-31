@@ -16,7 +16,7 @@ class Recetas:
 
         self.miFrame4=Frame(self.ventanita4, width=200, height=200)
         self.miFrame4.pack()
-        self.miFrame4.config(bg='plum')
+        self.miFrame4.config(bg='teal')
 
         #self.miLabel4=Label(self.miFrame4, text="1. Sobrepeso", font=("Arial", 15, BOLD, ITALIC))
         #self.miLabel4.place(x=25, y=20)
@@ -31,19 +31,19 @@ class Recetas:
             Recetaobeso()
        
 
-        botonInstru=Button(self.ventanita4, text="Sobrepeso", command=codigoBoton3, bg='pink')
+        botonInstru=Button(self.ventanita4, text="   Sobrepeso  ", command=codigoBoton3)
         botonInstru.place(x=45, y=20)
-        botonInstru.config(bg='plum')
+        botonInstru.config(bg='paleturquoise')
 
         def codigoBoton4():
             self.ventanita4.destroy()
             Recetadelgado()
        
 
-        botonInstru=Button(self.ventanita4, text="Bajo de peso", command=codigoBoton4, bg='pink')
+        botonInstru=Button(self.ventanita4, text=" Bajo de peso ", command=codigoBoton4)
         botonInstru.place(x=45, y=55)
-        botonInstru.config(bg='plum')
-        
+        botonInstru.config(bg='paleturquoise')
+
 
         
        
