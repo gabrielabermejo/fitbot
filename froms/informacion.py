@@ -33,21 +33,21 @@ class Info:
         self.miLabel2.config(bg='black')
 
         pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso),font=14, padx=-12,fg='white', bg='black')
-        pesoLabel2.place(x=150, y=85)
+        pesoLabel2.place(x=220, y=85)
 
         self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='lime')
         self.miLabel2.place(x=1, y=116)
         self.miLabel2.config(bg='black')
         
         alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura),font=14, padx=-12, fg='white', bg='black')
-        alturaLabel2.place(x=150, y=115)
+        alturaLabel2.place(x=220, y=115)
 
         self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='lime')
         self.miLabel2.place(x=1, y=146)
         self.miLabel2.config(bg='black')
 
         edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), font=14,padx=-12, bg='black', fg='white')
-        edadLabel2.place(x=150, y=145)
+        edadLabel2.place(x=220, y=145)
 
 
         IMC = persona.peso/((persona.altura*0.01)**2)
@@ -78,7 +78,7 @@ class Info:
         print(str(IMC))
 
         IMCLabel2=Label(self.miFrame2, text="Su IMC es de: "+str(IMC), padx=-12, fg='white', bg='black', font=("Arial", 13))
-        IMCLabel2.place(x=150, y=200)
+        IMCLabel2.place(x=135, y=200)
 
         estadoLabel2=Label(self.miFrame2, text="Estado: "+Mensaje.get(), padx=-12, fg='white', bg='black')
         estadoLabel2.place(x=150, y=255)
@@ -102,7 +102,7 @@ class Info:
         else:
             Mensaje.set('Su peso ideal es de: '+str(g))
             
-        gLabel2=Label(self.miFrame2, text="Acerca de su peso ideal: "+Mensaje.get(),  font=("Arial", 11, BOLD, ITALIC), fg='white')
+        gLabel2=Label(self.miFrame2, text="Acerca de su peso ideal: "+Mensaje.get(),  font=("Arial", 11, BOLD, ITALIC), fg='white', bg='black')
         gLabel2.place(x=45, y=350)
 
 
