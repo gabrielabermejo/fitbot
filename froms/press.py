@@ -33,3 +33,11 @@ class Press:
         self.miLabel5=Label(self.miFrame5, text="2. Sujeta la barra de peso a la altura del torso y elévala poco a poco hasta estirar los \n brazos del todo.", font=("Arial", 9))
         self.miLabel5.place(x=6, y=105)
         self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="3. Finalmente, bájala con lentitud para no hacerte daño.", font=("Arial", 9))
+        self.miLabel5.place(x=6, y=147)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="4. Luego vuelve a la posición inicial. Haz 2 series de 10 repeticiones.", font=("Arial", 9))
+        self.miLabel5.place(x=6, y=185)
+        self.miLabel5.config(bg='white')

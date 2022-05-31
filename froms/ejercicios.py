@@ -2,6 +2,7 @@ from distutils.log import info
 from tkinter import *
 from tkinter.font import BOLD, ITALIC
 from froms.adelgazar import EjerciciosA
+from froms.engordar import Engordar
 
 class Ejercicios:
     def __init__(self):
@@ -31,6 +32,15 @@ class Ejercicios:
 
         botonInstru=Button(self.ventanita11, text="   Adelgazar  ", command=codigoBoton3)
         botonInstru.place(x=45, y=35)
+        botonInstru.config(bg='paleturquoise')
+
+        def codigoBoton4():
+            self.ventanita11.destroy()
+            Engordar()
+       
+
+        botonInstru=Button(self.ventanita11, text="Aumentar de peso", command=codigoBoton4)
+        botonInstru.place(x=45, y=75)
         botonInstru.config(bg='paleturquoise')
 
 
