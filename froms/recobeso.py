@@ -95,7 +95,7 @@ class Recetaobeso:
         self.miLabel5.place(x=55, y=360)
         self.miLabel5.config(bg='white')
 
-        self.miLabel5=Label(self.miFrame5, text="2. Caldo de verduras")
+        self.miLabel5=Label(self.miFrame5, text="3. Caldo de verduras")
         self.miLabel5.place(x=55, y=415)
         self.miLabel5.config(bg='white')
 

@@ -4,7 +4,7 @@ from tkinter.font import BOLD, ITALIC
 class Caldo:
     def __init__(self):
         self.ventanita9 = Tk()
-        self.ventanita9.title("PANQUEQUES DE BANANO")
+        self.ventanita9.title("CALDO")
 
         self.ventanita9.iconbitmap("froms\imagenes\icono.ico")
 

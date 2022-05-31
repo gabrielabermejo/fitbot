@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter.font import BOLD, ITALIC
 from froms.yogurt import Yogurt
+from froms.batido import Batido
 
 class Recetadelgado:
     def __init__(self):
@@ -83,13 +84,24 @@ class Recetadelgado:
         self.miLabel5.place(x=55, y=320)
         self.miLabel5.config(bg='white')
 
+        def codigoBoton5():
+            self.ventanita9.destroy()
+            Batido()
+
+
         def codigoBoton4():
             self.ventanita9.destroy()
             Yogurt()
             
         botonInstru=Button(self.ventanita9, text="Mostrar pasos", command=codigoBoton4)
+        botonInstru.place(x=60, y=350)
+        botonInstru.config(bg='paleturquoise')
+
+        botonInstru=Button(self.ventanita9, text="Mostrar pasos", command=codigoBoton5)
         botonInstru.place(x=60, y=185)
         botonInstru.config(bg='paleturquoise')
+
+
 
 
         
