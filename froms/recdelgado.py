@@ -59,11 +59,27 @@ class Recetadelgado:
         self.miLabel5.config(bg='white')
 
         self.miLabel5=Label(self.miFrame5, text="2. Batido de platano, mango y yogurt")
-        self.miLabel5.place(x=55, y=250)
+        self.miLabel5.place(x=55, y=215)
         self.miLabel5.config(bg='white')
 
         self.miLabel5=Label(self.miFrame5, text="Ingredientes: ")
-        self.miLabel5.place(x=55, y=270)
+        self.miLabel5.place(x=55, y=235)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="- Pulpa de 1 mango")
+        self.miLabel5.place(x=55, y=260)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="- 1 plátano")
+        self.miLabel5.place(x=55, y=280)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="- Medio vaso de yogur natural")
+        self.miLabel5.place(x=55, y=300)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="- Medio vaso de leche de vaca")
+        self.miLabel5.place(x=55, y=320)
         self.miLabel5.config(bg='white')
 
         def codigoBoton4():
@@ -71,7 +87,7 @@ class Recetadelgado:
             pass
             
         botonInstru=Button(self.ventanita9, text="Mostrar pasos", command=codigoBoton4)
-        botonInstru.place(x=60, y=200)
+        botonInstru.place(x=60, y=185)
         botonInstru.config(bg='paleturquoise')
 
 
