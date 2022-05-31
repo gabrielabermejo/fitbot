@@ -32,17 +32,21 @@ class Info:
         self.miLabel2.place(x=1, y=86)
         self.miLabel2.config(bg='black')
 
-        pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso), padx=-12,fg='white', bg='black')
+        pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso),font=14, padx=-12,fg='white', bg='black')
         pesoLabel2.place(x=150, y=85)
 
         self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='lime')
         self.miLabel2.place(x=1, y=116)
         self.miLabel2.config(bg='black')
         
-        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12, fg='white', bg='black')
+        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura),font=14, padx=-12, fg='white', bg='black')
         alturaLabel2.place(x=150, y=115)
 
-        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12, bg='black', fg='white')
+        self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='lime')
+        self.miLabel2.place(x=1, y=146)
+        self.miLabel2.config(bg='black')
+
+        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), font=14,padx=-12, bg='black', fg='white')
         edadLabel2.place(x=150, y=145)
 
 
@@ -88,7 +92,7 @@ class Info:
     
             Recetas()
 
-        botonInstru=Button(self.ventanita2, text="RECETAS", command=codigoBoton2, bg='black', fg='white')
+        botonInstru=Button(self.ventanita2, text="RECETAS", command=codigoBoton2, bg='white', fg='black')
         botonInstru.place(x=15, y=380)
 
         g=persona.altura-100
