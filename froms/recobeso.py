@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter.font import BOLD, ITALIC
 from froms.ensaladat import Ensalada
 from froms.panque import Panq
+from froms.caldo import Caldo
 
 
 class Recetaobeso:
@@ -82,6 +83,38 @@ class Recetaobeso:
         self.miLabel5.place(x=55, y=415)
         self.miLabel5.config(bg='pink')
 
+        self.miLabel5=Label(self.miFrame5, text="Ingredientes: ")
+        self.miLabel5.place(x=55, y=435)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- 1 Kg de cebolla")
+        self.miLabel5.place(x=55, y=455)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- 1 Kg apio con sus hojas")
+        self.miLabel5.place(x=55, y=475)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- 1/2  Kg de zanahorias")
+        self.miLabel5.place(x=55, y=495)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="Otros opcionales: ")
+        self.miLabel5.place(x=195, y=435)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- Dientes de ajo: ")
+        self.miLabel5.place(x=195, y=455)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- Unas pocas ramas de cilantro")
+        self.miLabel5.place(x=195, y=475)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- Hojas de laurel")
+        self.miLabel5.place(x=195, y=495)
+        self.miLabel5.config(bg='pink')
+
 
         def codigoBoton4():
             self.ventanita5.destroy()
@@ -90,6 +123,10 @@ class Recetaobeso:
         def codigoBoton5():
             self.ventanita5.destroy()
             Panq()
+
+        def codigoBoton6():
+            self.ventanita5.destroy()
+            Caldo()
        
 
         botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton4)
@@ -98,6 +135,10 @@ class Recetaobeso:
 
         botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton5)
         botonInstru.place(x=60, y=385)
+        botonInstru.config(bg='pink2')
+
+        botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton6)
+        botonInstru.place(x=60, y=520)
         botonInstru.config(bg='pink2')
 
         
