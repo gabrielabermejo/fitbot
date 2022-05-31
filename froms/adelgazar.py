@@ -1,5 +1,7 @@
 from tkinter import *
 from tkinter.font import BOLD, ITALIC
+from froms.sentadilla import Sentadilla
+from froms.press import Press
 
 class EjerciciosA:
     def __init__(self):
@@ -33,3 +35,35 @@ class EjerciciosA:
         self.miLabel5=Label(self.miFrame5, text="========RUTINA PARA BAJAR PESO========", font=("Arial", 13, BOLD, ITALIC))
         self.miLabel5.place(x=0, y=10)
         self.miLabel5.config(bg='paleturquoise')
+
+        self.miLabel5=Label(self.miFrame5, text="1. Sentadillas con barra")
+        self.miLabel5.place(x=15, y=45)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="Las sentadillas acompañadas con una barra de peso son un ejercicio \n muy eficaz para aumentar nuestra masa muscular, especialmente en \n las piernas, glúteos y abdomen. ")
+        self.miLabel5.place(x=15, y=65)
+        self.miLabel5.config(bg='white')
+
+        def codigoBoton4():
+            self.ventanita9.destroy()
+            Sentadilla()
+            
+        botonInstru=Button(self.ventanita9, text="Mostrar pasos", command=codigoBoton4)
+        botonInstru.place(x=60, y=118)
+        botonInstru.config(bg='paleturquoise')
+
+        self.miLabel5=Label(self.miFrame5, text="2. Press de banca")
+        self.miLabel5.place(x=15, y=145)
+        self.miLabel5.config(bg='white')
+
+        self.miLabel5=Label(self.miFrame5, text="El press de banca es el levantamiento de peso tumbado en un banco, \n otro ejercicio con el que conseguirás desarrollar poco a poco tus \n  músculos, especialmente el torso y los brazos. ")
+        self.miLabel5.place(x=15, y=165)
+        self.miLabel5.config(bg='white')
+
+        def codigoBoton5():
+            self.ventanita9.destroy()
+            Press()
+            
+        botonInstru=Button(self.ventanita9, text="Mostrar pasos", command=codigoBoton5)
+        botonInstru.place(x=60, y=220)
+        botonInstru.config(bg='paleturquoise')
