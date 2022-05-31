@@ -17,3 +17,7 @@ class Ensalada:
         self.miLabel5=Label(self.miFrame5, text="Pasos a seguir: ", font=("Arial", 13, BOLD, ITALIC))
         self.miLabel5.place(x=55, y=20)
         self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="1. Para empezar, lavar bien los tomates. \n Yo me aseguro de eliminar cualquier residuo, \n remojándolos con agua y un chorro de vinagre \n (blanco) después de lavarlos. ", font=("Arial", 10))
+        self.miLabel5.place(x=55, y=20)
+        self.miLabel5.config(bg='pink')

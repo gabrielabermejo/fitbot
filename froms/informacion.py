@@ -32,22 +32,22 @@ class Info:
         self.miLabel2.place(x=1, y=86)
         self.miLabel2.config(bg='white')
 
-        pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso),font=14, padx=-12,fg='black', bg='white')
-        pesoLabel2.place(x=220, y=85)
+        pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso),font=9, padx=-12,fg='black', bg='white')
+        pesoLabel2.place(x=220, y=80)
 
         self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='paleturquoise')
-        self.miLabel2.place(x=1, y=116)
+        self.miLabel2.place(x=1, y=120)
         self.miLabel2.config(bg='white')
         
-        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura),font=14, padx=-12, fg='black', bg='white')
+        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura),font=9, padx=-12, fg='black', bg='white')
         alturaLabel2.place(x=220, y=115)
 
         self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='paleturquoise')
-        self.miLabel2.place(x=1, y=146)
+        self.miLabel2.place(x=1, y=155)
         self.miLabel2.config(bg='white')
 
-        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), font=14,padx=-12, bg='white', fg='black')
-        edadLabel2.place(x=220, y=145)
+        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), font=9,padx=-12, bg='white', fg='black')
+        edadLabel2.place(x=220, y=150)
 
 
         IMC = persona.peso/((persona.altura*0.01)**2)
