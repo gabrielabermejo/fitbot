@@ -2,7 +2,8 @@ from entidades.persona import Personas
 from tkinter import *
 from froms.recetas import Recetas
 from tkinter.font import BOLD, ITALIC
-
+#from colorama import Fore, init
+#init()
 class Info:
     def __init__(self,persona):
         self.ventanita2 = Tk()
@@ -14,26 +15,34 @@ class Info:
 
         self.miFrame2=Frame(self.ventanita2, width=500, height=500)
         self.miFrame2.pack()
-        self.miFrame2.config(bg='pink')
-        self.miLabel2=Label(self.miFrame2, text="===============RESULTADOS===============", font=("The Monotype Corporation", 15))
+        self.miFrame2.config(bg='black')
+        self.miLabel2=Label(self.miFrame2, text="===============RESULTADOS===============", font=("The Monotype Corporation", 16), fg='white')
         self.miLabel2.place(x=1, y=14)
-        self.miLabel2.config(bg='pink')
+        self.miLabel2.config(bg='black')
 
         self.miFrame3=Frame(self.miFrame2, width=500, height=15)
         self.miFrame3.place(x=0,y=0)
-        self.miFrame3.config(bg='pink2')
+        self.miFrame3.config(bg='lime')
 
         self.miFrame4=Frame(self.miFrame2, width=500, height=15)
         self.miFrame4.place(x=0,y=40)
-        self.miFrame4.config(bg='pink2')
+        self.miFrame4.config(bg='lime')
 
-        pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso), padx=-12, bg='pink')
+        self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='lime')
+        self.miLabel2.place(x=1, y=86)
+        self.miLabel2.config(bg='black')
+
+        pesoLabel2=Label(self.miFrame2, text="Peso: "+str(persona.peso), padx=-12,fg='white', bg='black')
         pesoLabel2.place(x=150, y=85)
+
+        self.miLabel2=Label(self.miFrame2, text="___________________________________________", font=("The Monotype Corporation", 16), fg='lime')
+        self.miLabel2.place(x=1, y=116)
+        self.miLabel2.config(bg='black')
         
-        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12, bg='pink')
+        alturaLabel2=Label(self.miFrame2, text="Altura: "+str(persona.altura), padx=-12, fg='white', bg='black')
         alturaLabel2.place(x=150, y=115)
 
-        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12, bg='pink')
+        edadLabel2=Label(self.miFrame2, text="Edad: "+str(persona.edad), padx=-12, bg='black', fg='white')
         edadLabel2.place(x=150, y=145)
 
 
@@ -64,14 +73,14 @@ class Info:
         print(Mensaje.get())
         print(str(IMC))
 
-        IMCLabel2=Label(self.miFrame2, text="Su IMC es de: "+str(IMC), padx=-12, bg='pink', font=("Arial", 13))
-        IMCLabel2.place(x=150, y=230)
+        IMCLabel2=Label(self.miFrame2, text="Su IMC es de: "+str(IMC), padx=-12, fg='white', bg='black', font=("Arial", 13))
+        IMCLabel2.place(x=150, y=200)
 
-        estadoLabel2=Label(self.miFrame2, text="Estado: "+Mensaje.get(), padx=-12, bg='pink')
+        estadoLabel2=Label(self.miFrame2, text="Estado: "+Mensaje.get(), padx=-12, fg='white', bg='black')
         estadoLabel2.place(x=150, y=255)
 
 
-        recomendacionesLabel2=Label(self.miFrame2, text="Recomendaciones: "+recomendacion.get(), padx=-12, bg='pink')
+        recomendacionesLabel2=Label(self.miFrame2, text="Recomendaciones: "+recomendacion.get(), padx=-12, bg='black', fg='white')
         recomendacionesLabel2.place(x=150, y=280)
 
 
@@ -79,7 +88,7 @@ class Info:
     
             Recetas()
 
-        botonInstru=Button(self.ventanita2, text="RECETAS", command=codigoBoton2, bg='light pink')
+        botonInstru=Button(self.ventanita2, text="RECETAS", command=codigoBoton2, bg='black', fg='white')
         botonInstru.place(x=15, y=380)
 
         g=persona.altura-100
@@ -89,7 +98,7 @@ class Info:
         else:
             Mensaje.set('Su peso ideal es de: '+str(g))
             
-        gLabel2=Label(self.miFrame2, text="Acerca de su peso ideal: "+Mensaje.get(),  font=("Arial", 11, BOLD, ITALIC) )
+        gLabel2=Label(self.miFrame2, text="Acerca de su peso ideal: "+Mensaje.get(),  font=("Arial", 11, BOLD, ITALIC), fg='white')
         gLabel2.place(x=45, y=350)
 
 
