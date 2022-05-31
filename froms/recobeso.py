@@ -42,15 +42,23 @@ class Recetaobeso:
         self.miLabel5.config(bg='pink')
 
         self.miLabel5=Label(self.miFrame5, text="- Aceite de oliva virgen extra")
-        self.miLabel5.place(x=55, y=150)
+        self.miLabel5.place(x=55, y=160)
         self.miLabel5.config(bg='pink')
 
         self.miLabel5=Label(self.miFrame5, text="- Una pizca de sal y pimienta negra \n recién molida")
-        self.miLabel5.place(x=55, y=170)
+        self.miLabel5.place(x=55, y=180)
         self.miLabel5.config(bg='pink')
 
         self.miLabel5=Label(self.miFrame5, text="- Vinagre balsámico o de jerez opcional.")
-        self.miLabel5.place(x=55, y=190)
+        self.miLabel5.place(x=55, y=200)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="2. Panqueques de banana.")
+        self.miLabel5.place(x=55, y=260)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="Ingredientes: ")
+        self.miLabel5.place(x=55, y=280)
         self.miLabel5.config(bg='pink')
 
         def codigoBoton4():
@@ -59,7 +67,7 @@ class Recetaobeso:
        
 
         botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton4)
-        botonInstru.place(x=45, y=215)
+        botonInstru.place(x=60, y=225)
         botonInstru.config(bg='pink2')
 
         
