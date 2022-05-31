@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter.font import BOLD, ITALIC
 from froms.ensaladat import Ensalada
+from froms.panque import Panq
 
 
 class Recetaobeso:
@@ -61,13 +62,42 @@ class Recetaobeso:
         self.miLabel5.place(x=55, y=280)
         self.miLabel5.config(bg='pink')
 
+        self.miLabel5=Label(self.miFrame5, text="- 1 banana mediana ligeramente madura")
+        self.miLabel5.place(x=55, y=300)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- 50 gramos de harina de trigo todo uso")
+        self.miLabel5.place(x=55, y=320)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- 50 gramos de harina de quinoa ó de arroz")
+        self.miLabel5.place(x=55, y=340)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="- 250 mililitros de leche desnatada")
+        self.miLabel5.place(x=55, y=360)
+        self.miLabel5.config(bg='pink')
+
+        self.miLabel5=Label(self.miFrame5, text="2. Caldo de verduras")
+        self.miLabel5.place(x=55, y=415)
+        self.miLabel5.config(bg='pink')
+
+
         def codigoBoton4():
             self.ventanita5.destroy()
             Ensalada()
+
+        def codigoBoton5():
+            self.ventanita5.destroy()
+            Panq()
        
 
         botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton4)
         botonInstru.place(x=60, y=225)
+        botonInstru.config(bg='pink2')
+
+        botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton5)
+        botonInstru.place(x=60, y=385)
         botonInstru.config(bg='pink2')
 
         
