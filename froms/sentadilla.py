@@ -26,7 +26,7 @@ class Sentadilla:
         self.miFrame3.place(x=0,y=35)
         self.miFrame3.config(bg='paleturquoise')
 
-        self.miLabel5=Label(self.miFrame5, text="1. Para realizar este ejercicio tendrás que ponerte de pie, con las piernas algo más separadas \n de la línea de tus hombros.", font=("Arial", 9))
+        self.miLabel5=Label(self.miFrame5, text="1. Para realizar este ejercicio tendrás que ponerte de pie, con las piernas algo más \n separadas de la línea de tus hombros.", font=("Arial", 9))
         self.miLabel5.place(x=6, y=50)
         self.miLabel5.config(bg='white')
 
