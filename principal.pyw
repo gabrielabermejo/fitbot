@@ -74,12 +74,13 @@ class Principal:
             self.ventanita.destroy()
             Info(p)
 
-        def codigoBoton1():
-
-            Instru()
 
         botonEnvio=Button(self.ventanita, text="Enviar", command=codigoBoton, bg='paleturquoise')
         botonEnvio.place(x=220, y=210)
+
+        def codigoBoton1():
+    
+            Instru()
 
         botonInstru=Button(self.ventanita, text="?", command=codigoBoton1, bg='paleturquoise')
         botonInstru.place(x=15, y=350)
