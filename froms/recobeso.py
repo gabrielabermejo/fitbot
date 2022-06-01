@@ -15,11 +15,11 @@ class Recetaobeso:
 
         self.ventanita5.resizable(False, False)
 
-        self.miFrame5=Frame(self.ventanita5, width=400, height=550)
+        self.miFrame5=Frame(self.ventanita5, width=400, height=600)
         self.miFrame5.pack()
         self.miFrame5.config(bg='white')
 
-        self.miFrame=Frame(self.miFrame5, width=10, height=550)
+        self.miFrame=Frame(self.miFrame5, width=10, height=600)
         self.miFrame.place(x=0,y=0)
         self.miFrame.config(bg='paleturquoise')
 
