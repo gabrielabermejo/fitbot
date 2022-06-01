@@ -1,7 +1,9 @@
 from tkinter import *
 from tkinter.font import BOLD, ITALIC
+from froms.link2 import Link2
 from froms.yogurt import Yogurt
 from froms.batido import Batido
+from froms.link2 import Link2
 
 class Recetadelgado:
     def __init__(self):
@@ -12,11 +14,11 @@ class Recetadelgado:
 
         self.ventanita9.resizable(False, False)
 
-        self.miFrame5=Frame(self.ventanita9, width=400, height=600)
+        self.miFrame5=Frame(self.ventanita9, width=400, height=500)
         self.miFrame5.pack()
         self.miFrame5.config(bg='white')
 
-        self.miFrame=Frame(self.miFrame5, width=10, height=600)
+        self.miFrame=Frame(self.miFrame5, width=10, height=500)
         self.miFrame.place(x=0,y=0)
         self.miFrame.config(bg='paleturquoise')
 
@@ -28,7 +30,7 @@ class Recetadelgado:
         self.miFrame.place(x=0,y=0)
         self.miFrame.config(bg='paleturquoise')
 
-        self.miFrame=Frame(self.miFrame5, width=10, height=600)
+        self.miFrame=Frame(self.miFrame5, width=10, height=500)
         self.miFrame.place(x=390,y=0)
         self.miFrame.config(bg='paleturquoise')
 
@@ -101,6 +103,13 @@ class Recetadelgado:
         botonInstru.place(x=60, y=185)
         botonInstru.config(bg='paleturquoise')
 
+        def codigoBoton6():
+            self.ventanita9.destroy()
+            Link2()
+
+        botonInstru=Button(self.ventanita9, text="    Mas recetas    ", command=codigoBoton6)
+        botonInstru.place(x=280, y=370)
+        botonInstru.config(bg='turquoise')
 
 
 

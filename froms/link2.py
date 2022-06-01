@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter.font import BOLD, ITALIC
 import webbrowser
 
-class Link:
+class Link2:
     def __init__(self):
         self.ventanita8 = Tk()
         self.ventanita8.title("Link")
@@ -15,4 +15,4 @@ class Link:
         self.miFrame5.pack()
         self.miFrame5.config(bg='white')
 
-        webbrowser.open("https://www.comedera.com/recetas-para-adelgazar/")
+        webbrowser.open("https://fitmencook.com/es/recetas/entrenamiento/ganar-peso/")
