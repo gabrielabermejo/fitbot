@@ -3,6 +3,7 @@ from tkinter.font import BOLD, ITALIC
 from froms.ensaladat import Ensalada
 from froms.panque import Panq
 from froms.caldo import Caldo
+from froms.link import Link
 
 
 class Recetaobeso:
@@ -155,6 +156,14 @@ class Recetaobeso:
 
         botonInstru=Button(self.ventanita5, text="Mostrar pasos", command=codigoBoton6)
         botonInstru.place(x=60, y=520)
+        botonInstru.config(bg='paleturquoise')
+
+        def codigoBoton7():
+            self.ventanita5.destroy()
+            Link()
+
+        botonInstru=Button(self.ventanita5, text="Mas recetas", command=codigoBoton7)
+        botonInstru.place(x=180, y=520)
         botonInstru.config(bg='paleturquoise')
 
         
